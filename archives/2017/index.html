@@ -210,7 +210,9 @@
 <script type="text/javascript">
   (function(){
     $("div.post-preview").each(function(i){
-      console.log(i);
+      if ( i > 0 ) {
+	this.css("margin-top", "15px");
+      }
     });
   }());
 </script>
